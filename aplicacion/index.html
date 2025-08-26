@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario y Tabla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container mt-4">
+
+    <h4></h4>
+
+   
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <label>Nombre</label>
+            <input type="text" id="nombre" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label>Cédula</label>
+            <input type="text" id="cedula" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label>Correo</label>
+            <input type="email" id="correo" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label>Dirección</label>
+            <input type="text" id="direccion" class="form-control" />
+        </div>
+    </div>
+
+    <button id="btnAgregar" class="btn btn-info mb-3">
+        <i class="bi bi-plus-circle"></i> Agregar
+    </button>
+
+ 
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Nombre</th>
+                <th>Cédula</th>
+                <th>Correo</th>
+                <th>Dirección</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="tablaDatos">
+       
+            <tr>
+                <td>Josias Ramirez</td>
+                <td>2300906548</td>
+                <td>josias.ramriez.valdez@utelvt.edu.ec</td>
+                <td>La Concordia</td>
+                <td>
+                    <button class="btn btn-danger btn-sm btnEliminar">
+                        <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Alejandra Alvarado</td>
+                <td>2321187640</td>
+                <td>alejandra.alvarado@utelvt.edu.ec</td>
+                <td>Santo Domingo</td>
+                <td>
+                    <button class="btn btn-danger btn-sm btnEliminar">
+                        <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Carlos Valdez</td>
+                <td>1783014679</td>
+                <td>carlos.valdez@utelvt.edu.ec</td>
+                <td>Quininde</td>
+                <td>
+                    <button class="btn btn-danger btn-sm btnEliminar">
+                        <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
